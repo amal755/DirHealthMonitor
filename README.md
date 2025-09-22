@@ -1,6 +1,6 @@
 # DirHealthMonitor
 
-**DirHealthMonitor** is a Bash script to monitor directory disk and inode usage, generate daily logs, send alerts, and clean old log files.
+**DirHealthMonitor** is a lightweight Bash script that monitors directories on Linux systems for disk and inode usage, generates daily logs, sends alerts, and cleans old log files.
 
 ## Features
 - Monitor multiple directories
@@ -9,10 +9,21 @@
 - Automatic cleanup of old logs
 - Daily log rotation
 
+## Installation
+Clone repo, make script executable (chmod +x dirMON.sh), create log folder.
+
+## Viewing Logs
+```bash
+cat /home/amal/forpro/logs/dirhealth.log
+cat /home/amal/forpro/logs/dirhealth_2025-09-22.log
+```
+
 ## Usage
-Make script executable: chmod +x dirMON.sh
-Run manually: ./dirMON.sh
-Or schedule via cron
+Run manually: ./dirMON.sh  
+Schedule via cron for automatic daily monitoring:  
+```bash
+crontab -e
+```
 
 ## License
 MIT License
