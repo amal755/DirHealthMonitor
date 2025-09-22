@@ -14,7 +14,8 @@ Clone repo, make script executable (chmod +x dirMON.sh), create log folder.
 
 ## Viewing Logs
 ```bash
-cat /home/amal/forpro/logs/dirhealth.log
+tail -n 20 /home/amal/forpro/logs/dirhealth.log
+
 cat /home/amal/forpro/logs/dirhealth_2025-09-22.log
 ```
 
@@ -23,6 +24,7 @@ Run manually: ./dirMON.sh
 Schedule via cron for automatic daily monitoring:  
 ```bash
 crontab -e
+
 ```
 
 ## License
